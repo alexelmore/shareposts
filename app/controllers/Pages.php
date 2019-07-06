@@ -9,7 +9,7 @@ class Pages extends Controller
     {
 
         $data = [
-            'title' => 'ElmoreMVC',
+            'title' => 'Shareposts',
 
         ];
 
