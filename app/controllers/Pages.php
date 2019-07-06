@@ -10,6 +10,7 @@ class Pages extends Controller
 
         $data = [
             'title' => 'Shareposts',
+            'description' => 'Simple social network built on the ElmoreMvc PHP framework'
 
         ];
 
@@ -18,7 +19,10 @@ class Pages extends Controller
 
     public function about()
     {
-        $data = ['title' => 'about'];
+        $data = [
+            'title' => 'about',
+            'description' => 'An application to shareposts with other users'
+        ];
         $this->view('pages/about', $data);
     }
 }
