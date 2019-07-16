@@ -57,4 +57,17 @@ class User
             return false;
         }
     }
+
+    // Get user by id 
+    public function getUserById($id)
+    {
+        $this->db->query('SELECT * FROM users WHERE id = :id');
+        // Bind named paramter to email that was passed in
+        $this->db->bind(':id', $id);
+
+        $row = $this->db->single();
+
+        // return row
+        return  $row;
+    }
 }
